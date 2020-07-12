@@ -60,3 +60,4 @@ page {
 .userinfo-nickname-wrapper {
   flex: 1;
 }
+
