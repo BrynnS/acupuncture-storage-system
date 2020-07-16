@@ -1,0 +1,1 @@
+from machine import Pinimport timep4 = Pin(4, Pin.OUT)while True:    p4.value(1)    time.sleep_ms(500)    p4.value(0)    time.sleep_ms(500)
