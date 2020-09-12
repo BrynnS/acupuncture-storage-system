@@ -1,0 +1,92 @@
+<!--miniprogram/pages/equipment/equipment.wxml-->
+<view class='cu-custom'>
+	<view class="cu-bar fixed bg-shadeTop" style="height:{{CustomBar}}px;padding-top:{{StatusBar}}px;">
+		<navigator class='action' open-type="navigateBack" delta="1" hover-class="none">
+			<text class='cuIcon-back'></text> 返回
+		</navigator>
+		<view class='content' style='top:{{StatusBar}}px;'>设备管理</view>
+	</view>
+</view>
+
+<swiper class="screen-swiper round-dot" indicator-dots="true" circular="true" autoplay="true" interval="5000" duration="500">
+	<swiper-item wx:for="{{4}}" wx:key="index">
+		<image src="/images/image{{ index+1 }}.png" mode='aspectFill'></image>
+	</swiper-item>
+</swiper>
+<view class="VerticalBox">
+	<scroll-view class="VerticalNav nav" scroll-y scroll-with-animation scroll-top="{{VerticalNavTop}}" style="height:calc(100vh - 375rpx)">
+		<view class="cu-item {{index==TabCur?'text-green cur':''}}" wx:for="{{list}}" wx:key="index" bindtap='tabSelect' data-id="{{index}}">
+			{{item.name}}
+		</view>
+	</scroll-view>
+	<scroll-view class="VerticalMain" scroll-y scroll-with-animation style="height:calc(100vh - 375rpx)" scroll-into-view="main-{{MainCur}}" bindscroll="VerticalMain">
+		<view class="padding-top padding-lr" wx:for="{{list}}" wx:key="index" id="main-{{index}}">
+			<view class='cu-bar solid-bottom bg-white'>
+				<view class='action'>
+					<text class='cuIcon-title text-green'></text>{{item.name}} 工作中...</view>
+			</view>
+			<view class="cu-list menu-avatar">
+				<view class="cu-item">
+					<image src="/images/logo.png" class="cu-avatar round lg"></image>
+					<view class="content">
+						<view class="text-grey">0.25*60mm(两寸)</view>
+						<view class="text-gray text-sm flex">
+							<text class="text-cut">
+										<text class="cuIcon-infofill text-green  margin-right-xs">充足</text>
+							</text>
+						</view>
+					</view>
+					<view class="action">
+						<view class="text-grey text-xs">剩余</view>
+						<view class="cu-tag round bg-grey sm">50%</view>
+					</view>
+				</view>
+				<view class="cu-item">
+					<image src="/images/logo.png" class="cu-avatar round lg"></image>
+					<view class="content">
+						<view class="text-grey">0.30*60mm(两寸)</view>
+						<view class="text-gray text-sm flex">
+							<text class="text-cut">
+										<text class="cuIcon-infofill text-green  margin-right-xs">充足</text>
+							</text>
+						</view>
+					</view>
+					<view class="action">
+						<view class="text-grey text-xs">剩余</view>
+						<view class="cu-tag round bg-grey sm">70%</view>
+					</view>
+				</view>
+				<view class="cu-item">
+					<image src="/images/logo.png" class="cu-avatar round lg"></image>
+					<view class="content">
+						<view class="text-grey">0.25*25mm(一寸)</view>
+						<view class="text-gray text-sm flex">
+							<text class="text-cut">
+										<text class="cuIcon-infofill text-red  margin-right-xs">缺少</text>
+							</text>
+						</view>
+					</view>
+					<view class="action">
+						<view class="text-grey text-xs">剩余</view>
+						<view class="cu-tag round bg-grey sm">12%</view>
+					</view>
+				</view>
+				<view class="cu-item">
+					<image src="/images/logo.png" class="cu-avatar round lg"></image>
+					<view class="content">
+						<view class="text-grey">0.35*25mm(1寸)</view>
+						<view class="text-gray text-sm flex">
+							<text class="text-cut">
+										<text class="cuIcon-infofill text-green  margin-right-xs">充足</text>
+							</text>
+						</view>
+					</view>
+					<view class="action">
+						<view class="text-grey text-xs">剩余</view>
+						<view class="cu-tag round bg-grey sm">50%</view>
+					</view>
+				</view>
+			</view>
+		</view>
+	</scroll-view>
+</view>

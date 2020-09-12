@@ -1,0 +1,33 @@
+<cu-custom bgColor="bg-gradual-green" isBack="{{true}}">
+	<view slot="backText">返回</view>
+	<view slot="content">关于团队</view>
+</cu-custom>
+<view class='margin-xl bg-white padding-xl radius shadow-lg'>
+	<view class='text-center margin-bottom text-lg  text-orange'>团队与组织结构</view>
+	<view class='text-content'>
+		<view> <text class="text-black text-bold">团队工作目标</text></view>
+		<view class='margin-top-sm'>为解决在在实际的针灸治疗过程中，针灸师工作负担重、效率低的问题，在现有技术的
+			基础下，设计出一款能实现通过现代各个智能化模块的相互配合，实现自动拆装针具、智能
+			化出针、计数计时报警的智能系统，从而减轻针灸师的负担、提高工作效率、提升患者的就
+			治体验。</view>
+		<view> <text class="text-black text-bold"></text>-------------------------------</view>
+		<view> <text class="text-black text-bold">团队成员简介</text></view>
+		<view class='margin-top-sm'>马昕： 华北理工大学大三计算机科学与技术专业学生，项目中电控部分的主要负责人，
+			负责代码编写和电路板设计。的主要代码框架和电路铺设的主要指导者和检测者，工作严谨
+			认真。 成功申报 2020 年度大学生创新创业训练计划项目立项校级大创 1 项，获得 2019（第
+			十八届） 、 2020 年（第十九届）全国大学生机器人大赛全国一等奖、第六届中国国际“互联11
+			网+”大学生创新创业大赛河北分赛区铜奖、 2019 年（第十三届） iCAN 国际创新创业大赛河
+			北分赛区选拔赛省赛优秀奖。</view>
+		<view class='margin-top-sm'>杜昊楠： 华北理工大学大三车辆专业学生，技术部成员。有两年机器人机械设计经验，
+			自主研发过机器人机械结构设计。 成功申报 2020 年度大学生创新创业训练计划项目立项校级
+			大创 1 项，获得 2019（第十八届） 、 2020 年（第十九届）全国大学生机器人大赛全国一等奖、
+			2019 年（第十三届） iCAN 国际创新创业大赛河北分赛区选拔赛省赛优秀奖。</view>
+		<view class='margin-top-sm'>樊小凯： 华北理工大学大三电子信息工程专业学生， 擅长新媒体平台运营，活动策划，
+			平面设计，视频制作等。 项目中负责制定营销策略，以及设计产品包装，进行市场调查。 获
+			得 2020 年（第十九届）全国大学生机器人大赛全国一等奖、第六届中国国际“互联网+”大
+			学生创新创业大赛河北分赛区铜奖、 全国 3D 设计大赛（第十三届）校级一等奖。</view>
+		<view class='margin-top-sm'>史冰冰：华北理工大学大二通信工程专业学生，项目中电控部分的次要负责人，负责一
+			部分电控代码的编写，以及产品装配以及产品的发展战略。 有过一到两年的编程设计经验，
+			做事认真仔细，思维缜密，在校期间积极参加各类学科竞赛，并获得很多奖项。</view>
+	</view>
+</view>

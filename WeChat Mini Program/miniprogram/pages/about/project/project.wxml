@@ -1,0 +1,26 @@
+<!--miniprogram/pages/project/project.wxml-->
+<cu-custom bgColor="bg-gradual-green" isBack="{{true}}">
+	<view slot="backText">返回</view>
+	<view slot="content">关于本项目</view>
+</cu-custom>
+
+<view class='margin-xl bg-white padding-xl radius shadow-lg'>
+	<view class='text-center margin-bottom text-lg  text-orange'>产品简介及特色</view>
+	<view class='text-content'>
+		<view> <text class="text-black text-bold">产品介绍</text></view>
+		<view class='margin-top-sm'>针灸师的智能小助手一共包含 3 部分组成： 即自动拆装针具、智能化出针、留针计数计
+			时。 在针灸师对患者进行治疗之前，可以首先使用移动客户端设置本次治疗所需针具的种类
+			以及数量， 针灸师的智能小助手将会提前为本次治疗准备相应针具； 医治过程中，针灸师每
+			次使用一根针具，系统会自动补齐，同时也可以依据患者的实际情况通过语音来控制系统进
+			行出针；进针结束后，留针计数计时模块会自动开始记录针具在病人身上留存时间，并在指
+			定时间后提醒针灸师取针；治疗结束后，患者的治疗情况可以记录并上传至服务器，方便后
+			续治疗。</view>
+		<view> <text class="text-black text-bold"></text>-------------------------------</view>
+		<view> <text class="text-black text-bold">产品特色</text></view>
+		<view class='margin-top-sm'>该产品融合机械设计制造及其自动化技术、电子科学技术、图像识别、通信等技术，一
+			体化和智能化程度较高。通过扫描病人的二维码，记录患者的信息，方便针灸师查看，在治
+			疗前，可利用我们定制编写的本系统专用微信小程序， 提前准备所需针具，为针灸做好准备；
+			治疗过程中可实现智能出针，也可以语音控制，快捷高效；进针结束后，可实现计数计时，
+			提醒针灸师取针。 使用该产品大大减少了针灸师的工作强度，提高患者治疗时的体验。</view>
+	</view>
+</view>

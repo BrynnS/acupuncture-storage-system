@@ -1,0 +1,5 @@
+<!--miniprogram/pages/about/acupuncture/acupuncture.wxml-->
+<cu-custom bgColor="bg-gradual-green" isBack="{{true}}">
+	<view slot="backText">返回</view>
+	<view slot="content">关于针灸</view>
+</cu-custom>
