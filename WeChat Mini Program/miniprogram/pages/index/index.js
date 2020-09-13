@@ -2,7 +2,6 @@
 const app = getApp()
 
 Page({
-
   data: {
     abnormal: 0,
     run: 14,

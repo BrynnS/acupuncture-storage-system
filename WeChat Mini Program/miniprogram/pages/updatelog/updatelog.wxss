@@ -1,0 +1,4 @@
+/* miniprogram/pages/Updatelog/updatelog.wxss */
+page {
+  background: #fff;
+}

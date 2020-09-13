@@ -53,6 +53,12 @@
 			</navigator>
 		</view>
 		<view class="cu-item arrow">
+			<navigator class="content" url="/pages/updatelog/updatelog" hover-class="none">
+        <text class="cuIcon-writefill text-cyan"></text>
+        <text class="text-grey">更新日志</text>
+			</navigator>
+    </view>
+		<view class="cu-item arrow">
 			<navigator class="content" url="/pages/bug/bug" hover-class="none">
 				<text class="cuIcon-creativefill text-orange"></text>
 				<text class="text-grey">Bug反馈</text>

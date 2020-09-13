@@ -1,20 +1,21 @@
 {
-    "pages": [
-        "pages/index/index",
-        "pages/about/group/group",
-        "pages/about/project/project",
-        "pages/about/acupuncture/acupuncture",
-        "pages/equipment/equipment",
-        "pages/bug/bug"
-    ],
-    "window": {
-        "navigationBarBackgroundColor": "#39b54a",
-        "navigationBarTitleText": "针灸系统",
-        "navigationStyle": "custom",
-        "navigationBarTextStyle": "white"
-    },
-    "sitemapLocation": "sitemap.json",
-    "usingComponents": {
-        "cu-custom": "/colorui/components/cu-custom"
-    }
+  "pages": [
+    "pages/index/index",
+    "pages/about/group/group",
+    "pages/about/project/project",
+    "pages/about/acupuncture/acupuncture",
+    "pages/equipment/equipment",
+    "pages/bug/bug",
+    "pages/updatelog/updatelog"
+  ],
+  "window": {
+    "navigationBarBackgroundColor": "#39b54a",
+    "navigationBarTitleText": "针灸系统",
+    "navigationStyle": "custom",
+    "navigationBarTextStyle": "white"
+  },
+  "sitemapLocation": "sitemap.json",
+  "usingComponents": {
+    "cu-custom": "/colorui/components/cu-custom"
+  }
 }

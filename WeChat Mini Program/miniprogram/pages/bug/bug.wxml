@@ -28,7 +28,7 @@
 			</view>
 		</picker>
 	</view>
-	<view class="cu-form-group"></view>
+	<view class="cu-form-group">
 		<view class="title">BUG出现日期</view>
 		<picker mode="date" value="{{date}}" start="2015-09-01" end="{{date}}" bindchange="DateChange">
 			<view class="picker">

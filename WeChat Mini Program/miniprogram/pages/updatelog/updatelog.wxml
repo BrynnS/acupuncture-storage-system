@@ -1,0 +1,43 @@
+<!--miniprogram/pages/Updatelog/updatelog.wxml-->
+<cu-custom bgColor="bg-gradual-green" isBack="{{true}}"><view slot="backText">返回</view><view slot="content">日志</view></cu-custom>
+<view class="cu-timeline">
+  <view class="cu-item text-green">
+    <view class="bg-green content shadow">
+      <view class="cu-capsule radius">
+        <view class="cu-tag bg-white text-green">v2.0.3</view>
+        <view class="cu-tag line-white">2020/09/14</view>
+      </view>
+      <view class="margin-top-sm text-content">
+        <view>1.修复IOS系统无法显示动画的问题</view>
+        <view>2.纠正一些单词拼写...</view>
+        <view>3.抛弃px单位的样式文件</view>
+        <view>4.修复不同屏幕比例显示不同的问题</view>
+        <view>6.抛弃网络图片地址，全部改用本地图片</view>
+        <view>7.优化设备管理页面，提高页面启动速度</view>
+      </view>
+    </view>
+  </view>
+  <view class="cu-item text-green">
+    <view class="bg-green content shadow">
+      <view class="cu-capsule radius">
+        <view class="cu-tag bg-white text-green">v2.0.2</view>
+        <view class="cu-tag line-white">2020/09/13</view>
+      </view>
+      <view class="margin-top-sm text-content">
+        <view>1.首页增加分享</view>
+        <view>2.修复图片手机端无法加载问题</view>
+        <view>3.优化页面设计，增加IOS系统加载速度</view>
+        <view>4.增加bug反馈功能</view>
+      </view>
+    </view>
+  </view>
+  <view class="cu-item text-green">
+    <view class="bg-green content shadow">
+      <view class="cu-capsule radius">
+        <view class="cu-tag bg-white text-green">v2.0.1</view>
+        <view class="cu-tag line-white">2020/09/212</view>
+      </view>
+      <view class="margin-top-sm text-content">2.0新版本上线</view>
+    </view>
+  </view>
+</view>
