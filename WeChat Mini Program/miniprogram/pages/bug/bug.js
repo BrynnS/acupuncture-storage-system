@@ -1,15 +1,19 @@
 // miniprogram/pages/bug/bug.js
+var util = require("./../../utils/utils.js")
+var TIME = util.formatTime(new Date());
 Page({
-
-  /**
-   * 页面的初始数据
-   */
   data: {
-    date: '2020-01-01',
+    date: TIME,
     imgList: [],
     textareaAValue: '',
+    picker: ['黑屏，无法显示', '小程序闪退', '设备无法连接','画面比例显示不正确'],
   },
-
+  PickerChange(e) {
+    console.log(e);
+    this.setData({
+      index: e.detail.value
+    })
+  },
   DateChange(e) {
     this.setData({
       date: e.detail.value

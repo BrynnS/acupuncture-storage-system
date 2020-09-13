@@ -3,3 +3,17 @@
 	<view slot="backText">返回</view>
 	<view slot="content">关于针灸</view>
 </cu-custom>
+<view class='margin-xl bg-white padding-xl radius shadow-lg'>
+	<view class='text-center margin-bottom text-lg  text-orange'>关于针灸</view>
+	<view class='text-content'>
+		<view> <text class="text-black text-bold">针灸简介</text></view>
+		<view class='margin-top-sm'>针灸是针法和灸法的总称。</view>
+		<view class='margin-top-sm'>
+			针法是指在中医理论的指导下把针具（通常指毫针）按照一定的角度刺入患者体内，运用捻转与提插等针刺手法来对人体特定部位进行刺激从而达到治疗疾病的目的。刺入点称为人体腧穴，简称穴位。根据最新针灸学教材统计，人体共有361个正经穴位。
+		</view>
+		<view class='margin-top-sm'>
+			灸法是以预制的灸炷或灸草在体表一定的穴位上烧灼、熏熨，利用热的刺激来预防和治疗疾病。通常以艾草最为常用，故而称为艾灸，另有隔药灸、柳条灸、灯芯灸、桑枝灸等方法。如今人们生活中也经常用到的多是艾条灸。</view>
+		<view class='margin-top-sm'>
+			针灸由“针”和“灸”构成，是东方医学的重要组成部分之一，其内容包括针灸理论、腧穴、针灸技术以及相关器具，在形成、应用和发展的过程中，具有鲜明的中华民族文化与地域特征，是基于中华民族文化和科学传统产生的宝贵遗产。</view>
+	</view>
+	</view>

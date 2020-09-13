@@ -20,9 +20,17 @@
 			</view>
 		</view>
 	</view>
-	<view class="cu-form-group">
-		<view class="title">提交日期</view>
-		<picker mode="date" value="{{date}}" start="2015-09-01" end="2021-09-01" bindchange="DateChange">
+	<view class="cu-form-group margin-top">
+		<view class="title">BUG类型</view>
+		<picker bindchange="PickerChange" value="{{index}}" range="{{picker}}">
+			<view class="picker">
+				{{index?picker[index]:'选择BUG类型'}}
+			</view>
+		</picker>
+	</view>
+	<view class="cu-form-group"></view>
+		<view class="title">BUG出现日期</view>
+		<picker mode="date" value="{{date}}" start="2015-09-01" end="{{date}}" bindchange="DateChange">
 			<view class="picker">
 				{{date}}
 			</view>
@@ -50,7 +58,7 @@
 		</view>
 	</view>
 	<view class="cu-form-group margin-top">
-		<textarea maxlength="-1" disabled="{{modalName!=null}}" bindinput="textareaAInput" placeholder="BUG说明"></textarea>
+		<textarea maxlength="-1" disabled="{{modalName!=null}}" bindinput="textareaAInput" placeholder="BUG说明（请简述BUG内容）"></textarea>
 	</view>
     <view class="padding-xl">
   <button class="cu-btn block line-orange lg" bindtap="showModal" data-target="Image">
