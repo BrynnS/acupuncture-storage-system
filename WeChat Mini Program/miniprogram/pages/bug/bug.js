@@ -1,6 +1,7 @@
 // miniprogram/pages/bug/bug.js
 var util = require("./../../utils/utils.js")
-var TIME = util.formatTime(new Date());
+var TIME = util.formatTime(new Date())
+const app = getApp()
 Page({
   data: {
     date: TIME,

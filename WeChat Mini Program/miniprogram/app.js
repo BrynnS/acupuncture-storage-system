@@ -1,20 +1,54 @@
 //app.js
+var mqtt = require("/utils/mqtt.js")
+
+function randomString(len) {
+  len = len || 32;
+  var $chars = 'ABCDEFGHJKMNPQRSTWXYZabcdefhijkmnprstwxyz2345678';
+  var maxPos = $chars.length;
+  var pwd = '';
+  for (let i = 0; i < len; i++) {
+    pwd += $chars.charAt(Math.floor(Math.random() * maxPos));
+  }
+  return pwd;
+}
+const options = {
+  connectTimeout: 4000,
+  clientId: randomString(30),
+  username: '',
+  password: '',
+}
+
 App({
   onLaunch: function () {
+    let that = this
     if (wx.cloud) {
       wx.cloud.init({
         traceUser: true
       })
     }
+    var client = mqtt.connect('wxs://www.maxin.email:8081', options)
+    client.on('connect', (e) => {
+      console.log('成功连接服务器!')
+    })
+    client.subscribe('esp8266', {
+      qos: 0
+    }, function (err) {
+      if (!err) {
+        console.log("订阅成功:esp8266")
+      }
+    })
+    client.on('message', function (topic, message, packet) {
+      that.globalData.mqttData = packet.payload.toString()
+    })
     wx.getSystemInfo({
       success: e => {
-        this.globalData.StatusBar = e.statusBarHeight;
+        that.globalData.StatusBar = e.statusBarHeight;
         let capsule = wx.getMenuButtonBoundingClientRect();
         if (capsule) {
-          this.globalData.Custom = capsule;
-          this.globalData.CustomBar = capsule.bottom + capsule.top - e.statusBarHeight;
+          that.globalData.Custom = capsule;
+          that.globalData.CustomBar = capsule.bottom + capsule.top - e.statusBarHeight;
         } else {
-          this.globalData.CustomBar = e.statusBarHeight + 50;
+          that.globalData.CustomBar = e.statusBarHeight + 50;
         }
       }
     })

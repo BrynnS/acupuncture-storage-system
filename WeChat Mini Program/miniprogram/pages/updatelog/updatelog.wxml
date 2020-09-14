@@ -4,6 +4,20 @@
   <view class="cu-item text-green">
     <view class="bg-green content shadow">
       <view class="cu-capsule radius">
+        <view class="cu-tag bg-white text-green">v2.0.4</view>
+        <view class="cu-tag line-white">2020/09/15</view>
+      </view>
+      <view class="margin-top-sm text-content">
+        <view>1.配置服务器相关</view>
+        <view>2.连接服务器</view>
+        <view>3.实现与服务器通信</view>
+        <view>4.实现mqtt服务器主题的订阅与发布</view>
+      </view>
+    </view>
+  </view>
+  <view class="cu-item text-green">
+    <view class="bg-green content shadow">
+      <view class="cu-capsule radius">
         <view class="cu-tag bg-white text-green">v2.0.3</view>
         <view class="cu-tag line-white">2020/09/14</view>
       </view>
